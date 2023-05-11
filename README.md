@@ -51,11 +51,11 @@ To load the aliases and popups into XChat, you can use the following steps:
 ```
 ┌─ Start Alias/Popup Script
 │
-├─ Load aliases.ini
+├─ Load aliases.ini mimickery
 │   └─ Define aliases from aliases.ini
 │       └─ Create aliases in X-Chat
 │
-├─ Load popups.ini
+├─ Load popups.ini mimickery
 │   └─ Create popups from popups.ini
 │       └─ Create context menu popups in X-Chat
 │           ├─ Channel Popup Menu (cpopup_menu)
@@ -71,6 +71,24 @@ To load the aliases and popups into XChat, you can use the following steps:
 │
 └─ End Alias/Popup Script
 ```
+## Other IRC related repositories:
+
+#### WeeChat
+- [weechat.ban-evasion-detection](https://github.com/apple-fritter/weechat.ban-evasion-detection): Detect and prevent ban evasion. Python.
+- [weechat.typo-aggregator](https://github.com/apple-fritter/weechat.typo-aggregator): Records misspelled words in a TSV (tab-separated values) file. Python.
+- [weechat.whois-aggregator](https://github.com/apple-fritter/weechat.whois-aggregator): Aggregate whois data in a rolling CSV file. Python.
+- [weechat.youtube-info](https://github.com/apple-fritter/weechat.youtube-info): Extract video information from a YouTube URL and post it back to the channel. Python.
+
+#### IRCcloud
+- [irccloud-to-weechat](https://github.com/apple-fritter/irccloud-to-weechat): Convert IRC logs from the IRCcloud format to the Weechat format. Rust.
+- [irccloud-to-xchat](https://github.com/apple-fritter/irccloud-to-xchat): Convert IRC logs from the IRCcloud format to the XChat format. Rust.
+
+#### X-Chat
+- [xchat.channel-moderation](https://github.com/apple-fritter/xchat.channel-moderation) Moderate an IRC channel. Python.
+
+#### IRC General
+
+- [driftwood](https://github.com/apple-fritter/driftwood): A unified IRC log format defined. Written in Rust.
 
 ## [Disclaimer](DISCLAIMER)
 **This software is provided "as is" and without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
