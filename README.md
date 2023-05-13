@@ -39,7 +39,7 @@ To load the aliases and popups into XChat, you can use the following steps:
 │
 ├─ Program Execution
 │   ├─ X-Chat event loop
-│   │   ├─ Handle incoming messages and events
+│   │   ├─ Handle incoming messages and/as events
 │   │   └─ Execute appropriate actions based on events
 │   │
 │   └─ End Program Execution
@@ -66,7 +66,8 @@ To load the aliases and popups into XChat, you can use the following steps:
 │
 ├─ Program Execution
 │   ├─ X-Chat event loop
-│   │   └─ Execute appropriate actions based on events
+│   │   └─ Execute appropriate actions based on user interaction
+│   │
 │   └─ End Program Execution
 │
 └─ End Alias/Popup Script
