@@ -1,7 +1,4 @@
 # doppelganger
-X-Chat mIRC imposter, geographical cloak.
-
-## Functions
 This is a simple script bundle for X-Chat to mimic a mostly vanilla install of mIRC version 7.72, to subvert some basic fingerprinting techniques.
 
 ## Installation and usage
