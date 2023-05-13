@@ -45,9 +45,12 @@ Start
 │   │   ├─ Get current UTC time
 │   │   ├─ Format time to mimic mIRC response format
 │   │   └─ Send notice message with formatted time to sender
+│   │
 │   ├─ CTCP Command = VERSION
 │   │   └─ Send notice message with mIRC version to sender
+│   │
 │   └─ Ignore other CTCP commands
+│
 ├─ Hook DCC CHAT event to disable_dcc function
 ├─ Hook DCC SEND event to disable_dcc function
 ├─ Hook DCC GET event to disable_dcc function
