@@ -120,7 +120,7 @@ Start
     - **Set Away... ?:** Prompts the user to enter an away message.
     - **Set Back:** Executes the command `/away` to unset the away status.
 - **List Channels:** Executes the command `/list` in the IRC client.
-- **Edit Notes:** Executes the command `py exec nano ~/notes.txt` to open the "notes.txt" file in nano.
+- **Edit Notes:** Executes the command `/py exec nano ~/notes.txt` to open the "notes.txt" file in nano.
 - **Quit IRC:** Executes the command `/quit` to disconnect from the IRC server.
 
 
