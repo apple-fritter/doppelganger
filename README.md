@@ -24,12 +24,15 @@ The script registers a callback function called ctcp_reply for the CTCP event.
 ##### It responds to two CTCP commands:
 
 ###### TIME:
-> When a `CTCP TIME` command is received, the script retrieves the current UTC time and formats it to mimic the response format used by mIRC. It then sends a notice message containing the formatted time back to the sender.
+When a `CTCP TIME` command is received, the script
+- Retrieves the current UTC time
+- Formats the response to match that used by mIRC
+- Sends a notice message containing the formatted time back to the sender.
 
 ###### VERSION:
-> When a `CTCP VERSION` command is received, the script responds that response mimics mIRC
+When a `CTCP VERSION` command is received, the script responds that response mimics mIRC
 
-> The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a plausible mIRC response.
+The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a plausible mIRC response.
 
 ##### Ignoring Other CTCP Commands:
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
