@@ -95,8 +95,8 @@ It's important to note that the script attempts to mimic the format and details 
 - The response may not precisely match the exact details of a real mIRC installation.
 - Adjustments may be needed to fine-tune the response to better match the expected appearance of an mIRC client, or to better match the user's intended use cases.
 
-### Foster a positive and inclusive environment
-#### Ensure that your usage of the script aligns with the hosting IRC platform's guidelines
+### Foster a positive and inclusive environment!
+#### Ensure that your usage of the script aligns with the hosting IRC platform's guidelines.
 - Familiarize yourself with the rules and policies set forth by the platform regarding script usage, automation, and acceptable behavior.
 - Comply with the ToS and respect any limitations or restrictions imposed by the platform.
 - Creates a positive and respectful experience for everyone involved.
@@ -108,9 +108,9 @@ It's essential to consider the rights and dignity of other users, which are foun
     - derogatory or inflammatory language or dialogue
     - obscene, triggering, or revolting content
     - harassment
-    - personal attacks.
+    - personal attacks
 - Obtain user consent before interacting with them or sending responses.
-  - Be respectful of other users' privacy
+  - Be respectful of other users' privacy.
   - Do not invade their personal space without their explicit permission.
 
 ### Respect the host platform
