@@ -1,6 +1,3 @@
-import xchat
-import time
-
 def ctcp_reply(word, word_eol, userdata):
     command = word[1]
     sender = word[0]
@@ -15,22 +12,10 @@ def ctcp_reply(word, word_eol, userdata):
         # Send the response to the sender
         xchat.command("NOTICE {} :\x01TIME {}\x01".format(sender, formatted_time))
     elif command == "VERSION":
-        xchat.command("NOTICE {} :\x01VERSION mIRC v7.72\x01".format(sender))
-    else:
-        # Ignore other CTCP commands
-        return xchat.EAT_XCHAT
+        # Construct the version response to mimic mIRC's installation details
+        version_response = "\x01VERSION mIRC v7.72 (Windows NT 6.3; Win64; x64; rv:77.0) Gecko/20100101 Thunderbird/77.0\x01"
+
+        # Send the response to the sender
+        xchat.command("NOTICE {} :{}".format(sender, version_response))
 
     return xchat.EAT_XCHAT
-
-def disable_dcc(word, word_eol, userdata):
-    return xchat.EAT_XCHAT
-
-# Hook the CTCP event to the ctcp_reply function
-xchat.hook_server("CTCP", ctcp_reply)
-
-# Hook the DCC events to the disable_dcc function
-xchat.hook_server("DCC CHAT", disable_dcc)
-xchat.hook_server("DCC SEND", disable_dcc)
-xchat.hook_server("DCC GET", disable_dcc)
-xchat.hook_server("DCC", disable_dcc)
-xchat.hook_server("XDCC", disable_dcc)
