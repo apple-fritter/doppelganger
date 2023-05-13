@@ -2,8 +2,8 @@
 A simple script bundle for X-Chat to mimic a mostly vanilla install of mIRC version 7.72, subvert some basic fingerprinting techniques and extend some needed functionality to the IRC client.
 
 ## Installation and usage
-To load the aliases and popups into XChat, you can use the following steps:
-1. Save the alias/popup script and ctcp script in separate files with the extension .py, for example, `ctcp.py` and `popups.py`.
+To load this bundle into XChat, you can use the following steps:
+1. Save the popup script and ctcp script in separate files with the extension .py, for example, `ctcp.py` and `popups.py`.
 2. Open XChat and connect to the desired IRC network and channel.
 3. In XChat, go to the "Window" menu and select "Plugins and Scripts" or "List of Plugins" (depending on the version of XChat you are using).
 4. In the "Plugins and Scripts" window, click on the "Load..." or "Add..." button.
