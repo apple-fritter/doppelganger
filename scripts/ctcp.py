@@ -13,7 +13,7 @@ def ctcp_reply(word, word_eol, userdata):
         xchat.command("NOTICE {} :\x01TIME {}\x01".format(sender, formatted_time))
     elif command == "VERSION":
         # Construct the version response to mimic mIRC's installation details
-        version_response = "\x01VERSION mIRC v7.72 Khaled Mardam-Bey\x01"
+        version_response = "\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"
 
         # Send the response to the sender
         xchat.command("NOTICE {} :{}".format(sender, version_response))
