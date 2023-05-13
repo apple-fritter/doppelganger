@@ -15,7 +15,9 @@ To load this bundle into XChat, you can use the following steps:
 > Make sure you have the necessary permissions to load scripts in XChat, as some IRC networks or security settings may restrict loading external scripts.
 
 ## Included scripts
+There are two scripts included in this repository, `popups.py`, and `ctcp.py`. The following subsections contain a detailed explanation of both:
 
+---
 ### ctcp.py
 The script is designed to provide specific functionalities within the X-Chat IRC client. The script provides selective CTCP handling, responding to specific commands while ignoring others, and disables DCC/XDCC functionality within the X-Chat IRC client.
 
@@ -29,19 +31,22 @@ When a `CTCP TIME` command is received, the script
 - Sends a notice message containing the formatted time back to the sender.
 
 #### VERSION:
-When a `CTCP VERSION` command is received, the script provides a response that mimics one originating from mIRC.
+When a `CTCP VERSION` command is received, the script sends the following response:
+```
+\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01
+```
 
-The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a considered plausible mIRC response.
+The above can be considered plausible mIRC response.
 
-In future versions of doppelganger, I will implement a dynamic response based on user configuration for specific version information.
+> Future versions of doppelganger will implement a dynamic response based on user configuration.
 
-#### Ignoring Other CTCP Commands:
+### Ignoring Other CTCP Commands:
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
 
-#### Disabling DCC/XDCC Functionality:
+### Disabling DCC/XDCC Functionality:
 The script hooks into various DCC events (DCC CHAT, DCC SEND, DCC GET, DCC, XDCC) and registers a callback function called disable_dcc. This function simply consumes the events and prevents any action from being taken, effectively disabling DCC and XDCC functionality.
 
-#### Flowchart
+### Flowchart
 ```
 Start
 ├─ Hook CTCP event to ctcp_reply function
@@ -64,7 +69,7 @@ Start
 └─ End CTCP subversion script
 
 ```
-
+---
 ### popups.py
 `popups.ini` is a configuration file used by mIRC, to define and customize pop-up menus. These menus provide a way for users to interact with the client by executing specific commands or actions. Similarly, "popups.py" is a Python script that replicates the functionality of "popups.ini". It allows XChat users to create their own custom pop-up menus, tailored to their preferences, and enhances interactivity within the client by providing a flexible and extensible framework. The particular actions listed in these context menues follow that of a standard mIRC installation.
 
