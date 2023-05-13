@@ -75,17 +75,17 @@ Start
 
 ##### Commands Pop-up Menu (bpopup_menu):
 
-- **Commands:** Sub-menu title.
+- **Commands:**
   - **Join channel:** Prompts the user to enter a channel name.
   - **Part channel:** Prompts the user to enter a channel name.
   - **Query user:** Prompts the user to enter a nickname and message.
   - **Send notice:** Prompts the user to enter a nickname and message.
   - **Whois user:** Prompts the user to enter a nickname.
-- **Send CTCP:** Sub-menu title.
+- **Send CTCP:**
   - **Ping:** Prompts the user to enter a nickname.
   - **Time:** Prompts the user to enter a nickname.
   - **Version:** Prompts the user to enter a nickname.
-- **Set Away:** Sub-menu title.
+- **Set Away:**
   - **On:** Prompts the user to enter an away message.
   - **Off:** Executes the command `/away` to unset the away status.
 - **Invite user:** Prompts the user to enter a nickname and channel name.
@@ -98,27 +98,27 @@ Start
 
 ##### Server Pop-up Menu (mpopup_menu):
 
-- **Server:** Sub-menu title.
-- **Lusers:** Executes the command `/lusers` in the IRC client.
-- **Motd:** Executes the command `/motd` in the IRC client.
-- **Time:** Executes the command `/time` in the IRC client.
-- **Names:** Sub-menu title.
+- **Server:**
+  - **Lusers:** Executes the command `/lusers` in the IRC client.
+  - **Motd:** Executes the command `/motd` in the IRC client.
+  - **Time:** Executes the command `/time` in the IRC client.
+- **Names:** 
   - **#mIRC:** Executes the command `/names #mirc` in the IRC client.
   - **#irchelp:** Executes the command `/names #irchelp` in the IRC client.
   - **?:** Prompts the user to enter a channel name.
-- **Join:** Sub-menu title.
+- **Join:**
   - **#mIRC:** Executes the command `/join #mirc` in the IRC client.
   - **#irchelp:** Executes the command `/join #irchelp` in the IRC client.
   - **?:** Prompts the user to enter a channel.
-- **Query:** Sub-menu title.
+- **Query:**
   - **?:** Prompts the user to enter a nickname.
-- **Other:** Sub-menu title.
+- **Other:**
   - **Whois ?:** Prompts the user to enter a nickname.
   - **Query ?:** Prompts the user to enter a nickname.
   - **Nickname ?:** Prompts the user to enter a new nickname.
-  - **Away:** Sub-menu title.
-    - **Set Away... ?:** Prompts the user to enter an away message.
-    - **Set Back:** Executes the command `/away` to unset the away status.
+- **Away:**
+  - **Set Away... ?:** Prompts the user to enter an away message.
+  - **Set Back:** Executes the command `/away` to unset the away status.
 - **List Channels:** Executes the command `/list` in the IRC client.
 - **Edit Notes:** Executes the command `/py exec nano ~/notes.txt` to open the "notes.txt" file in nano.
 - **Quit IRC:** Executes the command `/quit` to disconnect from the IRC server.
