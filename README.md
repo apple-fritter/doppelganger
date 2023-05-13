@@ -26,8 +26,8 @@ To load the aliases and popups into XChat, you can use the following steps:
 │
 ├─ Define ctcp_version_reply function
 │   ├─ Check for CTCP VERSION request
-│   └─ Send custom CTCP VERSION reply
-│   |   └─ Send custom NOTICE message with mIRC version
+│   ├─ Send custom CTCP VERSION reply
+│   │   └─ Send custom NOTICE message with mIRC version
 │   |
 │   ├─ Check for CTCP TIME request
 │   └─ Send custom CTCP TIME reply
@@ -59,8 +59,8 @@ To load the aliases and popups into XChat, you can use the following steps:
 │   └─ Create popups from popups.ini
 │       └─ Create context menu popups in X-Chat
 │           ├─ Channel Popup Menu (cpopup_menu)
-|           ├─ Button Popup Menu (bpopup_menu)
-|           └─ Main Popup Menu (mpopup_menu)
+│           ├─ Button Popup Menu (bpopup_menu)
+│           └─ Main Popup Menu (mpopup_menu)
 |
 ├─ Print confirmation message
 │
