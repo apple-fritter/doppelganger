@@ -105,7 +105,11 @@ It's essential to consider the rights and dignity of other users, which are foun
 
 **Respect the host platform**
 
-Avoid interfering with the normal flow of conversation in the IRC channel. Your script should respond to CTCP requests without causing disruptions or inconveniencing other users. Implement mechanisms to prevent spamming or flooding the channel with unnecessary messages. It is therefore crucial to handle errors gracefully to prevent unintended behavior or disruptions. Implement error handling mechanisms to ensure the script fails gracefully and does not cause instability or interfere with the IRC platform or other users' experiences.
+Avoid interfering with the normal flow of conversation in the IRC channel.
+
+Your script should respond to CTCP requests without causing disruptions or inconveniencing other users. Implement mechanisms to prevent spamming or flooding the channel with unnecessary messages.
+
+It is crucial to handle errors gracefully to prevent unintended behavior or disruptions. Implement error handling mechanisms to ensure the script fails gracefully and does not cause instability or interfere with the IRC platform or other users' experiences.
 
 **Ensure compatibility**
 
