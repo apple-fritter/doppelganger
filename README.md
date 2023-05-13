@@ -99,10 +99,11 @@ It's important to note that the script attempts to mimic the format and details 
 - Creates a positive and respectful experience for everyone involved.
 
 #### Respect the rights and dignity of other users and their preferences
-> It's essential to consider the rights and dignity of other users.  
+It's essential to consider the rights and dignity of other users, which are foundational concepts of the Internet Relay Chat ecosystem.  
 - Maintain a polite and courteous demeanor in all interactions.
   - Avoid engaging in inappropriate or offensive behavior:
-    - derogatory language
+    - derogatory or inflammatory language or dialogue
+    - obscene, triggering, or revolting content
     - harassment
     - personal attacks.
 - Obtain user consent before interacting with them or sending responses.
