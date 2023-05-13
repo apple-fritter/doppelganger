@@ -75,7 +75,7 @@ Start
 │           ├─ Channel Popup Menu (cpopup_menu)
 │           ├─ Button Popup Menu (bpopup_menu)
 │           └─ Main Popup Menu (mpopup_menu)
-|
+│
 ├─ Print confirmation message
 │
 ├─ Program Execution
