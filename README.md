@@ -19,27 +19,26 @@ To load the aliases and popups into XChat, you can use the following steps:
 ### ctcp.py
 The script is designed to provide specific functionalities within the X-Chat IRC client. The script provides selective CTCP handling, responding to specific commands while ignoring others, and disables DCC/XDCC functionality within the X-Chat IRC client.
 
-#### CTCP Handling:
 The script registers a callback function called ctcp_reply for the CTCP event.
-##### It responds to two CTCP commands:
+#### It responds to two CTCP commands:
 
-###### TIME:
+#### TIME:
 When a `CTCP TIME` command is received, the script
 - Retrieves the current UTC time
 - Formats the response to match that used by mIRC
 - Sends a notice message containing the formatted time back to the sender.
 
-###### VERSION:
+#### VERSION:
 When a `CTCP VERSION` command is received, the script provides a response that mimics one originating from mIRC.
 
 The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a considered plausible mIRC response.
 
 In future versions of doppelganger, I will implement a dynamic response based on user configuration for specific version information.
 
-##### Ignoring Other CTCP Commands:
+#### Ignoring Other CTCP Commands:
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
 
-##### Disabling DCC/XDCC Functionality:
+#### Disabling DCC/XDCC Functionality:
 The script hooks into various DCC events (DCC CHAT, DCC SEND, DCC GET, DCC, XDCC) and registers a callback function called disable_dcc. This function simply consumes the events and prevents any action from being taken, effectively disabling DCC and XDCC functionality.
 
 #### Flowchart
@@ -67,6 +66,9 @@ Start
 ```
 
 ### popups.py
+`popups.ini` is a configuration file used by mIRC, to define and customize pop-up menus. These menus provide a way for users to interact with the client by executing specific commands or actions. Similarly, "popups.py" is a Python script that replicates the functionality of "popups.ini". It allows XChat users to create their own custom pop-up menus, tailored to their preferences, and enhances interactivity within the client by providing a flexible and extensible framework. The particular actions listed in these context menues follow that of a standard mIRC installation.
+
+#### Flowchart
 ```
 ┌─ Start Alias/Popup .ini Script
 │
