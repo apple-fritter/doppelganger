@@ -3,7 +3,7 @@ A simple script bundle for X-Chat to mimic a mostly vanilla install of mIRC vers
 
 ## Installation and usage
 To load the aliases and popups into XChat, you can use the following steps:
-1. Save the alias script and popup script in separate files with the extension .py, for example, ctcp.py and popups.py.
+1. Save the alias/popup script and ctcp script in separate files with the extension .py, for example, `ctcp.py` and `popups.py`.
 2. Open XChat and connect to the desired IRC network and channel.
 3. In XChat, go to the "Window" menu and select "Plugins and Scripts" or "List of Plugins" (depending on the version of XChat you are using).
 4. In the "Plugins and Scripts" window, click on the "Load..." or "Add..." button.
@@ -88,59 +88,48 @@ Start
 ```
 
 ## Considerations
+
 When working with this script bundle, there are several important considerations to keep in mind.
 
-### Philosophy of use
-It's important to note that the script attempts to mimic the format and details of a standard mIRC version response.
-- The response may not precisely match the exact details of a real mIRC installation.
-- Adjustments may be needed to fine-tune the response to better match the expected appearance of an mIRC client, or to better match the user's intended use cases.
+**Philosophy of use**
 
-### Foster a positive and inclusive environment!
-#### Ensure that your usage of the script aligns with the hosting IRC platform's guidelines.
-- Familiarize yourself with the rules and policies set forth by the platform regarding script usage, automation, and acceptable behavior.
-- Comply with the ToS and respect any limitations or restrictions imposed by the platform.
-- Creates a positive and respectful experience for everyone involved.
+It's important to note that the script attempts to mimic the format and details of a standard mIRC version response. Adjustments may be needed to fine-tune the response to better match the expected appearance of an mIRC client or to better match the user's intended use cases.
 
-#### Respect the rights and dignity of other users and their preferences
-It's essential to consider the rights and dignity of other users, which are foundational concepts of the Internet Relay Chat ecosystem.  
-- Maintain a polite and courteous demeanor in all interactions.
-  - Avoid engaging in inappropriate or offensive behavior:
-    - derogatory or inflammatory language or dialogue
-    - obscene, triggering, or revolting content
-    - harassment
-    - personal attacks
-- Obtain user consent before interacting with them or sending responses.
-  - Be respectful of other users' privacy.
-  - Do not invade their personal space without their explicit permission.
+**Foster a positive and inclusive environment!**
 
-### Respect the host platform
+Ensure that your usage of the script aligns with the hosting IRC platform's guidelines. Familiarize yourself with the rules and policies set forth by the platform regarding script usage, automation, and acceptable behavior. Comply with the ToS and respect any limitations or restrictions imposed by the platform. Create a positive and respectful experience for everyone involved.
+
+**Respect the rights and dignity of other users and their preferences**
+
+It's essential to consider the rights and dignity of other users, which are foundational concepts of the Internet Relay Chat ecosystem. Maintain a polite and courteous demeanor in all interactions. Avoid engaging in inappropriate or offensive behavior such as derogatory or inflammatory language or dialogue, obscene, triggering, or revolting content, harassment, or personal attacks. Obtain user consent before interacting with them or sending responses. Be respectful of other users' privacy and do not invade their personal space without their explicit permission.
+
+**Respect the host platform**
 
 Avoid interfering with the normal flow of conversation in the IRC channel. Your script should respond to CTCP requests without causing disruptions or inconveniencing other users. Implement mechanisms to prevent spamming or flooding the channel with unnecessary messages. It is therefore crucial to handle errors gracefully to prevent unintended behavior or disruptions. Implement error handling mechanisms to ensure the script fails gracefully and does not cause instability or interfere with the IRC platform or other users' experiences.
 
-### Ensure compatibility
+**Ensure compatibility**
+
 Remember that the script aims to be agnostic to the actual host platform. While it provides a consistent response format, certain platform-specific functionalities may not be available or accurate on all platforms. Keep in mind the potential variations in behavior across different operating systems.
 
-The script relies on the xchat library, which is specific to the XChat IRC client.
-> It should go, without saying, that you should be sure you are using XChat or a compatible IRC client that supports the xchat library.
+The script relies on the xchat library, which is specific to the XChat IRC client. Be sure you are using XChat or a compatible IRC client that supports the xchat library.
 
-## Other IRC related repositories:
+## IRC Meta:
 
-#### WeeChat
+### WeeChat
 - [weechat.ban-evasion-detection](https://github.com/apple-fritter/weechat.ban-evasion-detection): Detect and prevent ban evasion. Python.
 - [weechat.typo-aggregator](https://github.com/apple-fritter/weechat.typo-aggregator): Records misspelled words in a TSV (tab-separated values) file. Python.
 - [weechat.whois-aggregator](https://github.com/apple-fritter/weechat.whois-aggregator): Aggregate whois data in a rolling CSV file. Python.
 - [weechat.youtube-info](https://github.com/apple-fritter/weechat.youtube-info): Extract video information from a YouTube URL and post it back to the channel. Python.
 
-#### IRCcloud
+### IRCcloud
 - [irccloud-to-weechat](https://github.com/apple-fritter/irccloud-to-weechat): Convert IRC logs from the IRCcloud format to the Weechat format. Rust.
 - [irccloud-to-xchat](https://github.com/apple-fritter/irccloud-to-xchat): Convert IRC logs from the IRCcloud format to the XChat format. Rust.
 
-#### X-Chat
+### X-Chat
 - [xchat.channel-moderation](https://github.com/apple-fritter/xchat.channel-moderation): Moderate an IRC channel. Python.
 - [doppelganger](https://github.com/apple-fritter/doppelganger): X-Chat mIRC imposter. Fingerprint subversion. Python bundle.
 
-#### IRC General
-
+### Other:
 - [driftwood](https://github.com/apple-fritter/driftwood): A unified IRC log format defined. Written in Rust.
 
 ## [Disclaimer](DISCLAIMER)
