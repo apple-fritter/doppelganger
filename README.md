@@ -28,7 +28,7 @@ To load the aliases and popups into XChat, you can use the following steps:
 │   ├─ Check for CTCP VERSION request
 │   ├─ Send custom CTCP VERSION reply
 │   │   └─ Send custom NOTICE message with mIRC version
-│   |
+│   │
 │   ├─ Check for CTCP TIME request
 │   └─ Send custom CTCP TIME reply
 │       └─ Send custom NOTICE message with UTC + 0
