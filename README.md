@@ -2,7 +2,7 @@
 X-Chat mIRC imposter, geographical cloak.
 
 ## Functions
-This is a simple script for X-Chat to mimic the out-of-the-box popup/context menu functionality of mIRC. I have also included a very basic script to subvert CTCP fingerprinting.
+This is a simple script bundle for X-Chat to mimic a mostly vanilla install of mIRC version 7.72, to subvert some basic fingerprinting techniques.
 
 ## Installation and usage
 To load the aliases and popups into XChat, you can use the following steps:
