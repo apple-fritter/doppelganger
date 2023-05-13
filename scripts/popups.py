@@ -60,7 +60,7 @@ mpopup_menu = [
     "..Set Back:/away",
     ".List Channels:/list",
     "-",
-    "Edit Notes:/run notepad.exe notes.txt",
+    "Edit Notes:/py exec nano ~/notes.txt",
     "Quit IRC:/quit Leaving"
 ]
 
