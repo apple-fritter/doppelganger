@@ -27,10 +27,10 @@ The script is designed to provide specific functionalities within the X-Chat IRC
 It responds to two CTCP commands:
 
 ###### TIME:
-When a CTCP TIME command is received, the script retrieves the current UTC time and formats it to mimic the response format used by mIRC. It then sends a notice message containing the formatted time back to the sender.
+When a `CTCP TIME` command is received, the script retrieves the current UTC time and formats it to mimic the response format used by mIRC. It then sends a notice message containing the formatted time back to the sender.
 
 ###### VERSION:
-When a CTCP VERSION command is received, the script responds with a notice message indicating the version of the mIRC client.
+When a `CTCP VERSION` command is received, the script responds with a notice message indicating the version of the mIRC client. Version response mimics the installation details of mIRC The response format resembles the typical format used by mIRC installations, including the string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"`, which is a plausible mIRC response.
 
 ##### Ignoring Other CTCP Commands:
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
@@ -38,7 +38,7 @@ Any CTCP commands other than TIME and VERSION are ignored. The script consumes t
 ##### Disabling DCC/XDCC Functionality:
 The script hooks into various DCC events (DCC CHAT, DCC SEND, DCC GET, DCC, XDCC) and registers a callback function called disable_dcc. This function simply consumes the events and prevents any action from being taken, effectively disabling DCC and XDCC functionality.
 
-### Flowchart
+#### Flowchart
 ```
 Start
 ├─ Hook CTCP event to ctcp_reply function
