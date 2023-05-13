@@ -20,14 +20,16 @@ To load the aliases and popups into XChat, you can use the following steps:
 The script is designed to provide specific functionalities within the X-Chat IRC client. The script provides selective CTCP handling, responding to specific commands while ignoring others, and disables DCC/XDCC functionality within the X-Chat IRC client.
 
 #### CTCP Handling:
-##### The script registers a callback function called ctcp_reply for the CTCP event.
-It responds to two CTCP commands:
+The script registers a callback function called ctcp_reply for the CTCP event.
+##### It responds to two CTCP commands:
 
 ###### TIME:
-When a `CTCP TIME` command is received, the script retrieves the current UTC time and formats it to mimic the response format used by mIRC. It then sends a notice message containing the formatted time back to the sender.
+> When a `CTCP TIME` command is received, the script retrieves the current UTC time and formats it to mimic the response format used by mIRC. It then sends a notice message containing the formatted time back to the sender.
 
 ###### VERSION:
-When a `CTCP VERSION` command is received, the script responds with a notice message indicating the version of the mIRC client. Version response mimics the installation details of mIRC The response format resembles the typical format used by mIRC installations, including the string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"`, which is a plausible mIRC response.
+> When a `CTCP VERSION` command is received, the script responds that response mimics mIRC
+
+> The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a plausible mIRC response.
 
 ##### Ignoring Other CTCP Commands:
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
@@ -81,6 +83,35 @@ Start
 │
 └─ End Alias/Popup Script
 ```
+
+## Considerations
+### When working with the provided script, there are several important considerations to keep in mind.
+
+#### Philosophy of use
+It's important to note that the script attempts to mimic the format and details of a standard mIRC version response. However, the response may not precisely match the exact details of a real mIRC installation. Adjustments may be needed to fine-tune the response to better match the expected appearance of an mIRC client, or to better match the user's intended use cases.
+
+### Foster a positive and inclusive environment
+Ensure that your usage of the script aligns with the hosting IRC platform's guidelines, respects the rights and dignity of other users, and creates a positive and respectful experience for everyone involved.
+
+#### Treat all users with dignity and respect
+##### Maintain a polite and courteous demeanor in all interactions.
+Avoid engaging in inappropriate or offensive behavior, including derogatory language, harassment, or personal attacks.
+
+##### Respect individual user preferences
+It's essential to consider the rights and dignity of other users. Obtain user consent before interacting with them or sending responses. Be respectful of other users' privacy and do not invade their personal space without their explicit permission.
+
+##### Respecting the hosting IRC platform
+
+Familiarize yourself with the rules and policies set forth by the platform regarding script usage, automation, and acceptable behavior. Comply with the ToS and respect any limitations or restrictions imposed by the platform.
+
+Avoid interfering with the normal flow of conversation in the IRC channel. Your script should respond to CTCP requests without causing disruptions or inconveniencing other users. Implement mechanisms to prevent spamming or flooding the channel with unnecessary messages. It is therefore crucial to handle errors gracefully to prevent unintended behavior or disruptions. Implement error handling mechanisms to ensure the script fails gracefully and does not cause instability or interfere with the IRC platform or other users' experiences.
+
+#### Ensure compatibility
+Remember that the script aims to be agnostic to the actual host platform. While it provides a consistent response format, certain platform-specific functionalities may not be available or accurate on all platforms. Keep in mind the potential variations in behavior across different operating systems.
+
+The script relies on the xchat library, which is specific to the XChat IRC client.
+> It should go, without saying, that you should be sure you are using XChat or a compatible IRC client that supports the xchat library.
+
 ## Other IRC related repositories:
 
 #### WeeChat
