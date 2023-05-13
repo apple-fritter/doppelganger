@@ -17,39 +17,51 @@ To load the aliases and popups into XChat, you can use the following steps:
 
 > Make sure you have the necessary permissions to load scripts in XChat, as some IRC networks or security settings may restrict loading external scripts.
 
-## Flowchart
-#### ctcp.py
+## Included scripts
+
+### ctcp.py
+The script is designed to provide specific functionalities within the X-Chat IRC client. The script provides selective CTCP handling, responding to specific commands while ignoring others, and disables DCC/XDCC functionality within the X-Chat IRC client.
+
+#### CTCP Handling:
+##### The script registers a callback function called ctcp_reply for the CTCP event.
+It responds to two CTCP commands:
+
+###### TIME:
+When a CTCP TIME command is received, the script retrieves the current UTC time and formats it to mimic the response format used by mIRC. It then sends a notice message containing the formatted time back to the sender.
+
+###### VERSION:
+When a CTCP VERSION command is received, the script responds with a notice message indicating the version of the mIRC client.
+
+##### Ignoring Other CTCP Commands:
+Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
+
+##### Disabling DCC/XDCC Functionality:
+The script hooks into various DCC events (DCC CHAT, DCC SEND, DCC GET, DCC, XDCC) and registers a callback function called disable_dcc. This function simply consumes the events and prevents any action from being taken, effectively disabling DCC and XDCC functionality.
+
+### Flowchart
 ```
-┌─ Start CTCP Script
+Start
+├─ Hook CTCP event to ctcp_reply function
+│   ├─ CTCP Command = TIME
+│   │   ├─ Get current UTC time
+│   │   ├─ Format time to mimic mIRC response format
+│   │   └─ Send notice message with formatted time to sender
+│   ├─ CTCP Command = VERSION
+│   │   └─ Send notice message with mIRC version to sender
+│   └─ Ignore other CTCP commands
+├─ Hook DCC CHAT event to disable_dcc function
+├─ Hook DCC SEND event to disable_dcc function
+├─ Hook DCC GET event to disable_dcc function
+├─ Hook DCC event to disable_dcc function
+├─ Hook XDCC event to disable_dcc function
 │
-├─ Define disable_ctcp_version function
-│
-├─ Define ctcp_version_reply function
-│   ├─ Check for CTCP VERSION request
-│   ├─ Send custom CTCP VERSION reply
-│   │   └─ Send custom NOTICE message with mIRC version
-│   │
-│   ├─ Check for CTCP TIME request
-│   └─ Send custom CTCP TIME reply
-│       └─ Send custom NOTICE message with UTC + 0
-│
-├─ Register event hooks for CTCP version reply functions
-│
-├─ Print confirmation message
-│
-├─ Program Execution
-│   ├─ X-Chat event loop
-│   │   ├─ Handle incoming messages and/as events
-│   │   └─ Execute appropriate actions based on events
-│   │
-│   └─ End Program Execution
-│
-└─ End CTCP Script
+└─ End CTCP subversion script
+
 ```
 
-#### popups.py
+### popups.py
 ```
-┌─ Start Alias/Popup Script
+┌─ Start Alias/Popup .ini Script
 │
 ├─ Load aliases.ini mimickery
 │   └─ Define aliases from aliases.ini
@@ -85,7 +97,8 @@ To load the aliases and popups into XChat, you can use the following steps:
 - [irccloud-to-xchat](https://github.com/apple-fritter/irccloud-to-xchat): Convert IRC logs from the IRCcloud format to the XChat format. Rust.
 
 #### X-Chat
-- [xchat.channel-moderation](https://github.com/apple-fritter/xchat.channel-moderation) Moderate an IRC channel. Python.
+- [xchat.channel-moderation](https://github.com/apple-fritter/xchat.channel-moderation): Moderate an IRC channel. Python.
+- [doppelganger](https://github.com/apple-fritter/doppelganger): Masquerade X-Chat client as an out-of-the-box mIRC client. Python.
 
 #### IRC General
 
