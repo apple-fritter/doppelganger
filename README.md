@@ -30,9 +30,11 @@ When a `CTCP TIME` command is received, the script
 - Sends a notice message containing the formatted time back to the sender.
 
 ###### VERSION:
-When a `CTCP VERSION` command is received, the script responds that response mimics mIRC
+When a `CTCP VERSION` command is received, the script provides a response that mimics one originating from mIRC.
 
-The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a plausible mIRC response.
+The string `"\x01VERSION mIRC v7.72 (Windows NT 6.3; WOW64) UK English\x01"` is a considered plausible mIRC response.
+
+In future versions of doppelganger, I will implement a dynamic response based on user configuration for specific version information.
 
 ##### Ignoring Other CTCP Commands:
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
