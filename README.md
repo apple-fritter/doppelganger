@@ -10,7 +10,7 @@ To load this bundle into XChat, you can use the following steps:
 5. Browse and select the .py files, and click "Open" to load the scripts.
 6. Once the scripts are loaded, XChat will automatically execute them, and the aliases and popups will be available for use in the IRC channel and query windows.
 7. You should now be able to access the context menus by right-clicking in the channel or query window and see the options that were defined in the scripts.
-8. CTCP responses for VERSION will return mIRC version 7.72 and TIME will return the actual UTC +0.
+8. CTCP responses for VERSION will return mIRC version 7.72 and TIME will return the actual UTC +0, both formatted to mimic mIRC.
 
 > Make sure you have the necessary permissions to load scripts in XChat, as some IRC networks or security settings may restrict loading external scripts.
 
@@ -21,7 +21,7 @@ There are two scripts included in this repository, `popups.py`, and `ctcp.py`. T
 ### ctcp.py
 The script is designed to provide specific functionalities within the X-Chat IRC client. The script provides selective CTCP handling, responding to specific commands while ignoring others, and disables DCC/XDCC functionality within the X-Chat IRC client.
 
-The script registers a callback function called ctcp_reply for the CTCP event.
+The script registers a callback function called `ctcp_reply` for the CTCP event.
 #### It responds to two CTCP commands:
 
 #### TIME:
@@ -44,7 +44,7 @@ The above can be considered plausible mIRC response.
 Any CTCP commands other than TIME and VERSION are ignored. The script consumes these commands without taking any further action.
 
 ### Disabling DCC/XDCC Functionality:
-The script hooks into various DCC events (DCC CHAT, DCC SEND, DCC GET, DCC, XDCC) and registers a callback function called disable_dcc. This function simply consumes the events and prevents any action from being taken, effectively disabling DCC and XDCC functionality.
+The script hooks into various DCC events (DCC CHAT, DCC SEND, DCC GET, DCC, XDCC) and registers a callback function called `disable_dcc`. This function simply consumes the events and prevents any action from being taken, effectively disabling DCC and XDCC functionality.
 
 ### Flowchart
 ```
@@ -170,7 +170,7 @@ Ensure that your usage of the script aligns with the hosting IRC platform's guid
 
 **Respect the rights and dignity of other users and their preferences**
 
-It's essential to consider the rights and dignity of other users, which are foundational concepts of the Internet Relay Chat ecosystem. Maintain a polite and courteous demeanor in all interactions. Avoid engaging in inappropriate or offensive behavior such as derogatory or inflammatory language or dialogue, obscene, triggering, or revolting content, harassment, or personal attacks. Obtain user consent before interacting with them or sending responses. Be respectful of other users' privacy and do not invade their personal space without their explicit permission.
+It's essential to consider the rights and dignity of other users, which are foundational concepts of the Internet Relay Chat ecosystem. Maintain a polite and courteous demeanor in all interactions. Avoid engaging in illegal, inappropriate or offensive behavior such as derogatory or inflammatory language or dialogue, obscene, triggering, or revolting content, harassment, or personal attacks. Obtain user consent before interacting with them or sending responses. Be respectful of other users' privacy and do not invade their personal space without their explicit permission.
 
 **Respect the host platform**
 
