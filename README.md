@@ -155,37 +155,6 @@ Start
 │
 └─ End Alias/Popup Script
 ```
-
-## Considerations
-
-When working with this script bundle, there are several important considerations to keep in mind.
-
-**Philosophy of use**
-
-It's important to note that the script attempts to mimic the format and details of a standard mIRC version response. Adjustments may be needed to fine-tune the response to better match the expected appearance of an mIRC client or to better match the user's intended use cases.
-
-**Foster a positive and inclusive environment!**
-
-Ensure that your usage of the script aligns with the hosting IRC platform's guidelines. Familiarize yourself with the rules and policies set forth by the platform regarding script usage, automation, and acceptable behavior. Comply with the ToS and respect any limitations or restrictions imposed by the platform. Create a positive and respectful experience for everyone involved.
-
-**Respect the rights and dignity of other users and their preferences**
-
-It's essential to consider the rights and dignity of other users, which are foundational concepts of the Internet Relay Chat ecosystem. Maintain a polite and courteous demeanor in all interactions. Avoid engaging in illegal, inappropriate or offensive behavior such as derogatory or inflammatory language or dialogue, obscene, triggering, or revolting content, harassment, or personal attacks. Obtain user consent before interacting with them or sending responses. Be respectful of other users' privacy and do not invade their personal space without their explicit permission.
-
-**Respect the host platform**
-
-Avoid interfering with the normal flow of conversation in the IRC channel.
-
-Your script should respond to CTCP requests without causing disruptions or inconveniencing other users. Implement mechanisms to prevent spamming or flooding the channel with unnecessary messages.
-
-It is crucial to handle errors gracefully to prevent unintended behavior or disruptions. Implement error handling mechanisms to ensure the script fails gracefully and does not cause instability or interfere with the IRC platform or other users' experiences.
-
-**Ensure compatibility**
-
-Remember that the script aims to be agnostic to the actual host platform. While it provides a consistent response format, certain platform-specific functionalities may not be available or accurate on all platforms. Keep in mind the potential variations in behavior across different operating systems.
-
-The script relies on the xchat library, which is specific to the XChat IRC client. Be sure you are using XChat or a compatible IRC client that supports the xchat library.
-
 ## IRC Meta
 
 ### WeeChat
@@ -204,6 +173,24 @@ The script relies on the xchat library, which is specific to the XChat IRC clien
 
 ### Other
 - [driftwood](https://github.com/apple-fritter/driftwood): A unified IRC log format definition. (Rust)
+
+### IRC usage considerations
+When working with any project involving IRC (Internet Relay Chat), it's important to keep the following considerations in mind to ensure a positive and respectful environment for all participants.
+
+#### Philosophy of Use
+Tailor your project's behavior and responses to align with the expected norms and conventions of IRC. Take into account the preferences and expectations of IRC users, ensuring that your project provides a seamless and familiar experience within the IRC ecosystem.
+
+#### Foster a Positive and Inclusive Environment
+Respect and adhere to the guidelines and policies of the IRC platform you are using. Familiarize yourself with the platform's rules regarding script usage, automation, and acceptable behavior. Comply with the platform's Terms of Service, and be mindful of any limitations or restrictions imposed by the platform. Strive to create an inclusive and welcoming environment where all users can engage respectfully and comfortably.
+
+#### Respect the Rights and Dignity of Other Users
+Maintain a polite and courteous demeanor in all interactions. Uphold the fundamental principles of respect, avoiding engagement in illegal, inappropriate, or offensive behavior. This includes refraining from using derogatory or inflammatory language, sharing explicit, triggering, or offensive content, engaging in harassment, or launching personal attacks. Obtain explicit consent before interacting with other users or sending automated responses. Respect the privacy of other users and avoid invading their personal space without their permission.
+
+#### Respect the IRC Community and Channels
+Avoid disrupting the normal flow of conversation within IRC channels. Ensure that your project's actions and responses do not cause unnecessary disruptions or inconvenience to other users. Implement mechanisms to prevent spamming or flooding the channel with excessive or irrelevant messages. Handle errors gracefully, preventing unintended behavior or disruptions to the IRC platform or the experiences of other users.
+
+#### Ensure Compatibility
+Consider the potential variations in behavior across different IRC platforms and clients. While aiming for compatibility, be aware that certain functionalities may not be available or consistent across all platforms. Test your project on multiple IRC platforms and clients to ensure compatibility and provide the best possible experience for users.
 
 ## [Disclaimer](DISCLAIMER)
 **This software is provided "as is" and without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
