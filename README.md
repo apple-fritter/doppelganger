@@ -1,6 +1,8 @@
 # doppelganger
 A simple script bundle for X-Chat to mimic a mostly vanilla install of mIRC version 7.72, subvert some basic fingerprinting techniques and extend some needed functionality to the IRC client.
 
+---
+
 ## Installation and usage
 To load this bundle into XChat, you can use the following steps:
 1. Save the popup script and ctcp script in separate files with the extension .py, for example, `ctcp.py` and `popups.py`.
@@ -14,10 +16,13 @@ To load this bundle into XChat, you can use the following steps:
 
 > Make sure you have the necessary permissions to load scripts in XChat, as some IRC networks or security settings may restrict loading external scripts.
 
+---
+
 ## Included scripts
 There are two scripts included in this repository, `popups.py`, and `ctcp.py`. The following subsections contain a detailed explanation of both:
 
 ---
+
 ### ctcp.py
 The script is designed to provide specific functionalities within the X-Chat IRC client. The script provides selective CTCP handling, responding to specific commands while ignoring others, and disables DCC/XDCC functionality within the X-Chat IRC client.
 
@@ -69,7 +74,9 @@ Start
 └─ End CTCP subversion script
 
 ```
+
 ---
+
 ### popups.py
 `popups.ini` is a configuration file used by mIRC, to define and customize pop-up menus. These menus provide a way for users to interact with the client by executing specific commands or actions. Similarly, "popups.py" is a Python script that replicates the functionality of "popups.ini". It allows XChat users to create their own custom pop-up menus, tailored to their preferences, and enhances interactivity within the client by providing a flexible and extensible framework. The particular actions listed in these context menues follow that of a standard mIRC installation.
 
@@ -128,8 +135,6 @@ Start
 - **Edit Notes:** Executes the command `/py exec nano ~/notes.txt` to open the "notes.txt" file in nano.
 - **Quit IRC:** Executes the command `/quit` to disconnect from the IRC server.
 
-
-
 #### Flowchart
 ```
 ┌─ Start Alias/Popup .ini Script
@@ -155,6 +160,9 @@ Start
 │
 └─ End Alias/Popup Script
 ```
+
+---
+
 ## IRC Meta
 
 ### WeeChat
@@ -193,10 +201,14 @@ Avoid disrupting the normal flow of conversation within IRC channels. Ensure tha
 #### Ensure Compatibility
 Consider the potential variations in behavior across different IRC platforms and clients. While aiming for compatibility, be aware that certain functionalities may not be available or consistent across all platforms. Test your project on multiple IRC platforms and clients to ensure compatibility and provide the best possible experience for users.
 
+---
+
 ## [Disclaimer](DISCLAIMER)
 **This software is provided "as is" and without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 
 **The authors do not endorse or support any harmful or malicious activities** that may be carried out with the software. It is the user's responsibility to ensure that their use of the software complies with all applicable laws and regulations.
+
+---
 
 ## License
 
